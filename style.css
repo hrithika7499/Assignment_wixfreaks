@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: #002E47;
+}
+:root {
+   
+    --max-width: 1200px;
+    }
+    #icon{
+        width: 30px;
+        cursor: pointer;
+        }
+       
+nav{
+    max-width: var(--max-width);
+    padding: 1rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_logo a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:  #E4DEB5;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    }
+.nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+
+   
+ .link a{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #E4DEB5;
+    text-decoration: none;
+    transition: .3s;
+ }
+
+.container{
+   
+   
+   
+    align-items: center;
+    color:#E4DEB5;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Adjust column widths as needed */
+    gap: 20px;
+}
+.image-container {
+    flex: 1 1 40%;
+    padding:20px;
+}
+
+img {
+    width:100px;
+    height:100px;
+   
+}
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.call-to-action {
+    background-color: #E4DEB5; /* Orange color from the image */
+    color:#E4DEB5;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px; /* Add some spacing below the button */
+  }
+  
+  .call-to-action a {
+    color: #E4DEB5; 
+    text-decoration: none; /* Remove default underline */
+    
+  }
+.list_container{
+    padding:25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+#services{
+   
+    color:#E4DEB5;
+    font-size: 30px;
+    padding-bottom: 15px;
+    
+    
+}
+
+   
+
+      ul {
+        list-style-type: none; /* Remove default bullet points */
+        margin: 0;
+        padding: 0;
+      }
+      
+      li {
+       
+        margin-bottom: 25px;
+        color: #865A1F;
+      }
+      
+      
+      
+      .number {
+         /* Orange color */
+        color: white;
+        display: inline-block;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        padding: 5px;
+        position: relative; /* Needed for the outer border */
+      }
+      
+     
+@keyframes rotateOut {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Apply the animation to the SVG element */
+.rotateOut {
+    animation: rotateOut 2s linear;
+
+    
+}
